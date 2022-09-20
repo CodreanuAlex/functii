@@ -1,0 +1,38 @@
+n,cif,repet2=int(input("Introduceti numarul:")),[],[]
+if n>=100000:
+    print("Nr trebuie sa fie mai mic decat 100000")
+    exit()
+def desc(x):
+    cif.append([int(i) for i in str(x)])
+desc(n)
+cif=cif[0]
+print("Nr de cifre:",len(cifre))
+def pi(x):
+    p=[z for z in x if i%2==0]
+    i=[z for z in x if i%2==1]
+    return nr_p, nr_imp
+print("Nr de cifre pare:", len(pi(cifre)[0]))
+print("Nr de cifre impare:", len(pi(cifre)[1]))
+def s(x):
+    s=0
+    for i in x:
+    s+=i
+    return s
+print("Suma:",suma(cif))
+print("Maxim:",max(cif))
+print("Minim:",min(cif))
+print("Media:", suma(cif)/len(cif))
+def repet2(x):
+    repet2.append([z for z in x if x.count(i)==2])
+repet2(cifre)
+repet2=[*set(repet2[0])]
+print("Cifrele care se repeta:",";".join([str(z) for z in repet2]))
+print("Cifrele:",";".join([str(z) for z in cif]))
+inv=lambda x:(1/x)
+print("Inversul:",invers(n))
+cif.sort(reverse=True)
+print("Cel mai mare numar:",";".join([str(z) for z in cif]))
+if len(div(n))==2:
+    print("Nr prim")
+
+    
